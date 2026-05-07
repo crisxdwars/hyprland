@@ -13,7 +13,7 @@ padding = 12
 horizontal_padding = 12
 
 # Visual appearance
-corner_radius = 9
+corner_radius = 0
 frame_width = 0
 separator_height = 2
 transparency = 20
