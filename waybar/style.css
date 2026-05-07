@@ -34,7 +34,6 @@
 /* Style when volume is muted */
 #pulseaudio.muted {
     color: #fb4934; /* The red you use for urgent workspaces */
-    text-decoration: line-through;
 }
 
 /* Arch Icon */
