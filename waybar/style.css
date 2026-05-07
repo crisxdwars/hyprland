@@ -26,23 +26,22 @@
 /* New Volume Module Styling */
 #pulseaudio {
     background-color: transparent;
-    padding: 0 10px; /* Consistent padding */
+    padding: 0 10px;
     color: #ffffff;
     margin-left: -20px;
 }
 
 /* Style when volume is muted */
 #pulseaudio.muted {
-    /* Optional: A subtle color change when muted */
     color: #fb4934; /* The red you use for urgent workspaces */
     text-decoration: line-through;
 }
 
-/* Arch Icon Module Styling (White color) */
+/* Arch Icon */
 #custom-arch {
-    color: #ffffff; /* Explicitly set to white */
-    padding: 0 15px 0 15px; /* Padding around the icon */
-    font-size: 18px; /* Slightly larger icon */
+    color: #ffffff;
+    padding: 0 15px 0 15px;
+    font-size: 15px;
 }
 
 /* Tray Styling */
@@ -58,9 +57,9 @@
 }
 
 #tray menu {
-    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black background */
-    color: #ffffff;          /* White/light text color */
-    border: 1px solid #4c4c4c; /* Subtle dark border */
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #ffffff;          
+    border: 1px solid #4c4c4c;
     border-radius: 6px;
     padding: 5px;
 }
@@ -68,23 +67,19 @@
 /* Styles the individual menu items */
 #tray menu menuitem {
     padding: 5px 10px;
-    color: #ffffff; /* Ensure menu text is white */
+    color: #ffffff; 
 }
 
 /* Styles the menu item when the mouse hovers over it */
 #tray menu menuitem:hover {
-    background-color: #458588; /* A visible highlight color (e.g., a blue/teal accent) */
+    background-color: #458588;
     color: #ffffff;
     border-radius: 4px;
 }
 
-/* Clock Styling (New) */
 /* Custom Clock Styling */
 #custom-clock {
     background-color: transparent;
-    /* Current: 0 15px (0 top/bottom, 15px left/right) */
-    
-    /* New: 0 5px (0 top/bottom, 5px left/right) */
     padding: 0 15px; 
     
     color: #ffffff;
@@ -101,17 +96,15 @@
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
-    color: #bbbbbb; /* Default workspace color (light gray) */
+    color: #bbbbbb;
     border: none;
     transition: all 0.2s ease-in-out;
 }
 
 /* Active Workspace Button */
 #workspaces button.active {
-    color: #ffffff; /* White color for active workspace */
+    color: #ffffff;
     font-weight: bolder;
-    /* Optional: add a subtle underline */
-    /* border-bottom: 2px solid #ffffff; */
 }
 
 /* Urgent Workspace Button */
@@ -121,7 +114,7 @@
 
 /* Focused Workspace on a different monitor (if you have multiple monitors) */
 #workspaces button.focused {
-    color: #fabd2f; /* Yellow color */
+    color: #fabd2f;
 }
 
 
