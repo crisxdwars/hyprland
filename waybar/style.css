@@ -8,9 +8,21 @@
 }
 
 #waybar {
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-    border-bottom: 1px solid rgba(135, 135, 135, 0.137); /* A subtle color line at the bottom */
+    background: transparent;
     transition: background-color 0.5s;
+}
+
+.modules-center {
+    border-bottom: 1px solid rgba(135, 135, 135, 0.137); /* A subtle color line at the bottom */
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 0 10px;
+}
+
+.modules-left, .modules-right {
+    border: none;
+    background: transparent;
 }
 
 /* -------------------- Modules Styling -------------------- */
@@ -18,9 +30,7 @@
 /* Custom Clock Styling */
 #custom-clock {
     background-color: transparent;
-    padding: 0 15px; 
     color: #ffffff;
-    margin-left: -15px;
 }
 
 /* New Volume Module Styling */
@@ -28,7 +38,6 @@
     background-color: transparent;
     padding: 0 10px;
     color: #ffffff;
-    margin-left: -20px;
 }
 
 /* Style when volume is muted */
@@ -48,6 +57,7 @@
     padding: 0 10px;
     background-color: #000000;
     color: black;
+    margin-left: 120px;
 }
 
 #tray .host {
@@ -76,19 +86,12 @@
     border-radius: 4px;
 }
 
-/* Custom Clock Styling */
-#custom-clock {
-    background-color: transparent;
-    padding: 0 15px; 
-    
-    color: #ffffff;
-}
-
 /* Workspaces Styling */
 #workspaces {
     padding: 0 5px;
-    margin: 0 10px;
+    margin-left: 10px;
     background-color: transparent;
+
 }
 
 /* Individual Workspace Button */
