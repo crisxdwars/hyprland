@@ -10,6 +10,8 @@
 #waybar {
     background: transparent;
     transition: background-color 0.5s;
+padding-left: 10px;
+    padding-right: 10px;
 }
 
 .modules-center {
@@ -26,31 +28,6 @@
 }
 
 /* -------------------- Modules Styling -------------------- */
-
-/* Custom Clock Styling */
-#custom-clock {
-    background-color: transparent;
-    color: #ffffff;
-}
-
-/* New Volume Module Styling */
-#pulseaudio {
-    background-color: transparent;
-    padding: 0 10px;
-    color: #ffffff;
-}
-
-/* Style when volume is muted */
-#pulseaudio.muted {
-    color: #fb4934; /* The red you use for urgent workspaces */
-}
-
-/* Arch Icon */
-#custom-arch {
-    color: #ffffff;
-    padding: 0 15px 0 15px;
-    font-size: 15px;
-}
 
 /* Tray Styling */
 #tray {
@@ -86,12 +63,37 @@
     border-radius: 4px;
 }
 
+/* Custom Clock Styling */
+#custom-clock {
+    background-color: transparent;
+    color: #ffffff;
+}
+
+/* New Volume Module Styling */
+#pulseaudio {
+    background-color: transparent;
+    padding: 0 10px;
+    color: #ffffff;
+}
+
+/* Style when volume is muted */
+#pulseaudio.muted {
+    color: #fb4934; /* The red you use for urgent workspaces */
+}
+
+/* Arch Icon */
+#custom-arch {
+    color: #ffffff;
+    padding: 0 15px 0 15px;
+    font-size: 15px;
+}
+
 /* Workspaces Styling */
 #workspaces {
     padding: 0 5px;
     margin-left: 10px;
     background-color: transparent;
-
+    min-width: 200px;
 }
 
 /* Individual Workspace Button */
