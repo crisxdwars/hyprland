@@ -1,6 +1,6 @@
 # **Resources To Install**
 
-    ``sudo pacman -S waybar swaybg gpu-screen-recorder wl-clipboard slurp grim ttf-fira-code ttf-fira-code noto-fonts-cjk zip lens-shot unzip pavucontrol --noconfirm``
+    sudo pacman -S waybar swaybg gpu-screen-recorder wl-clipboard slurp grim ttf-fira-code ttf-fira-code noto-fonts-cjk zip lens-shot unzip pavucontrol --noconfirm
 
 ### ****Resource Guide****
 - waybar = Top Bar<br/>
