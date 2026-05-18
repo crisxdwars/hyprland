@@ -20,5 +20,5 @@ cp -r kitty ~/.config
 echo "installing cursor configurations..."
 cp -r cursor/* ~/.local/share/icons
 echo "installing wallpapers..."
-cp -r wallpaper/* /home/$USER/Pictures/
+cp -r wallpaper /home/$USER/Pictures/
 echo "Setup Complete!"
