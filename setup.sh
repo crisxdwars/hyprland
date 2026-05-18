@@ -4,9 +4,9 @@ echo "Installing Dependencies..."
 
 sudo pacman -S waybar swaybg gpu-screen-recorder wl-clipboard slurp grim ttf-fira-code ttf-fira-code noto-fonts-cjk zip unzip pavucontrol --noconfirm
 
-echo "checking ~/.config directory..."
+echo "checking directories..."
 mkdir -p ~/.config
-
+mkdir -p /home/$USER/Pictures
 echo "copying wofi configurations..."
 cp -r wofi ~/.config
 echo "installing dunst configurations..."
@@ -19,4 +19,6 @@ echo "installing kitty configurations..."
 cp -r kitty ~/.config
 echo "installing cursor configurations..."
 cp -r cursor/* ~/.local/share/icons
+echo "installing wallpapers..."
+cp -r wallpapers/* /home/$USER/Pictures/
 echo "Setup Complete!"
