@@ -2,10 +2,8 @@
 ![Arch Linux](https://img.shields.io/badge/Arch%20Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)
 ![Hyprland](https://img.shields.io/badge/Hyprland-00BFFF?style=for-the-badge&logo=linux&logoColor=white)
 ### Installation:
-	cd hyprland
+	cd hyprland && ./setup
 <br>
-	./setup
-
 ### **Dependencies**
 
     sudo pacman -S waybar swaybg gpu-screen-recorder wl-clipboard slurp grim ttf-fira-code ttf-fira-code noto-fonts-cjk zip unzip pavucontrol --noconfirm
