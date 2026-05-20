@@ -3,7 +3,7 @@
 ![Hyprland](https://img.shields.io/badge/Hyprland-00BFFF?style=for-the-badge&logo=linux&logoColor=white)
 ### Installation:
 	cd hyprland && ./setup
-<br>
+
 ### Dependencies
 
     sudo pacman -S waybar swaybg gpu-screen-recorder wl-clipboard slurp grim ttf-fira-code ttf-fira-code noto-fonts-cjk zip unzip pavucontrol --noconfirm
