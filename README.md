@@ -4,11 +4,11 @@
 ### Installation:
 	cd hyprland && ./setup
 <br>
-### **Dependencies**
+### Dependencies
 
     sudo pacman -S waybar swaybg gpu-screen-recorder wl-clipboard slurp grim ttf-fira-code ttf-fira-code noto-fonts-cjk zip unzip pavucontrol --noconfirm
 
-### ****Resource Guide****
+### Resource Guide
 <small>
 <sub>waybar = Top Bar</sub><br/>
 <sub>swaybg = Wallpaper</sub><br/>
@@ -21,7 +21,7 @@
 <sub>pavucontrol = Output(Speakers) & Input(Microphone) Controls</sub><br/>
 </small>
  
-###  **Others:**<br>
+###  Others:<br>
 	yay -S lens-shot --noconfirm
 
 
