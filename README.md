@@ -3,6 +3,7 @@
     sudo pacman -S waybar swaybg gpu-screen-recorder wl-clipboard slurp grim ttf-fira-code ttf-fira-code noto-fonts-cjk zip unzip pavucontrol --noconfirm
 
 ### ****Resource Guide****
+<small>
 - waybar = Top Bar<br/>
 - swaybg = Wallpaper<br/>
 - gpu-screen-recorder = Graphics Based Screen Recorder<br/>
@@ -12,7 +13,7 @@
 - noto-fonts-cjk = Font Support For Chinese, Japanese, Korean<br/>
 - zip = Used to Zip & Unzip Files<br/>
 - pavucontrol = Output(Speakers) & Input(Microphone) Controls<br/>
-
+<small>
    **Others:**
 - yay -S lens-shot --noconfirm
 
