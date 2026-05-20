@@ -1,4 +1,4 @@
-### **Installation: **
+### Installation:
 <sub>cd hyprland</sub>
 <br>
 <sub>./setup</sub>
