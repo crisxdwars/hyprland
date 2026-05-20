@@ -16,7 +16,7 @@
 <small>
    **Others:**
 <br>
- ``yay -S lens-shot --noconfirm``
+	yay -S lens-shot --noconfirm
 
 
 
