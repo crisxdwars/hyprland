@@ -15,7 +15,8 @@
 - pavucontrol = Output(Speakers) & Input(Microphone) Controls<br/>
 <small>
    **Others:**
-- yay -S lens-shot --noconfirm
+<br>
+ ``yay -S lens-shot --noconfirm``
 
 
 
