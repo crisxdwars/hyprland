@@ -1,3 +1,5 @@
+![Arch Linux](https://img.shields.io/badge/Arch%20Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)
+![Hyprland](https://img.shields.io/badge/Hyprland-00BFFF?style=for-the-badge&logo=linux&logoColor=white)
 ### Installation:
 <sub>cd hyprland</sub>
 <br>
