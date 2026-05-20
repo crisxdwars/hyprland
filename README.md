@@ -1,9 +1,10 @@
+### Platform: <br>
 ![Arch Linux](https://img.shields.io/badge/Arch%20Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white)
 ![Hyprland](https://img.shields.io/badge/Hyprland-00BFFF?style=for-the-badge&logo=linux&logoColor=white)
 ### Installation:
-<sub>cd hyprland</sub>
+cd hyprland
 <br>
-<sub>./setup</sub>
+./setup
 
 ### **Dependencies**
 
@@ -11,15 +12,15 @@
 
 ### ****Resource Guide****
 <small>
-* waybar = Top Bar<br/>
-* swaybg = Wallpaper<br/>
-* gpu-screen-recorder = Graphics Based Screen Recorder<br/>
-* wl-clipboard, grim & slurp = Resources For Screenshot System<br/>
-* ttf-hack-nerd = Font Used For Waybar<br/>
-* ttf-fira-code = Font Used For Kitty (Terminal)<br/>
-* noto-fonts-cjk = Font Support For Chinese, Japanese, Korean<br/>
-* zip = Used to Zip & Unzip Files<br/>
-* pavucontrol = Output(Speakers) & Input(Microphone) Controls<br/>
+<sub>waybar = Top Bar</sub><br/>
+<sub>swaybg = Wallpaper</sub><br/>
+<sub>gpu-screen-recorder = Graphics Based Screen Recorder</sub><br/>
+<sub>wl-clipboard, grim & slurp = Resources For Screenshot System</sub><br/>
+<sub>ttf-hack-nerd = Font Used For Waybar</sub><br/>
+<sub>ttf-fira-code = Font Used For Kitty (Terminal)</sub><br/>
+<sub>noto-fonts-cjk = Font Support For Chinese, Japanese, Korean</sub><br/>
+<sub>zip = Used to Zip & Unzip Files</sub><br/>
+<sub>pavucontrol = Output(Speakers) & Input(Microphone) Controls</sub><br/>
 </small>
  
 ###  **Others:**<br>
