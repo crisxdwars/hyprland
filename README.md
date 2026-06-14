@@ -12,7 +12,7 @@
 <small>
 <sub>waybar = Top Bar</sub><br/>
 <sub>swaybg = Wallpaper</sub><br/>
-<sub>gpu-screen-recorder = Graphics Based Screen Recorder</sub><br/>
+<sub>wf-recorder = Screen Recorder</sub><br/>
 <sub>wl-clipboard, grim & slurp = Resources For Screenshot System</sub><br/>
 <sub>ttf-hack-nerd = Font Used For Waybar</sub><br/>
 <sub>ttf-fira-code = Font Used For Kitty (Terminal)</sub><br/>
