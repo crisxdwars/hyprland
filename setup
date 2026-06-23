@@ -2,7 +2,7 @@
 
 echo "Installing Dependencies..."
 
-sudo pacman -S waybar swaybg wf-recorder wl-clipboard slurp grim ttf-fira-code ttf-fira-code noto-fonts-cjk zip unzip pavucontrol --noconfirm
+sudo pacman -S waybar swaybg wf-recorder wl-clipboard slurp grim ttf-fira-code ttf-fira-code noto-fonts-cjk zip unzip pavucontrol ddcutil modprobe i2c-dev --noconfirm
 
 echo "checking directories..."
 mkdir -p ~/.config
@@ -21,4 +21,10 @@ echo "installing cursor configurations..."
 cp -r cursor/* ~/.local/share/icons
 echo "installing wallpapers..."
 cp -r wallpaper /home/$USER/Pictures/
+echo "configuring the monitor..."
+sudo modprobe i2c-dev
+echo "i2c-dev" | sudo tee /etc/modules-load.d/i2c.conf
+sudo usermod -aG i2c $USER
+ddcutil setvcp 10 50
 echo "Setup Complete!"
+
