@@ -6,9 +6,9 @@
 
 ### Dependencies & Resources
 
-    sudo pacman -S waybar swaybg wf-recorder wl-clipboard slurp grim ttf-fira-code ttf-fira-code noto-fonts-cjk zip unzip pavucontrol --noconfirm
+    sudo pacman -S waybar swaybg wf-recorder wl-clipboard slurp grim ttf-fira-code ttf-fira-code noto-fonts-cjk noto-fonts-emoji zip unzip pavucontrol --noconfirm
 
-### Resource Guide
+### Resource Information
 <small>
 <sub>waybar = Top Bar</sub><br/>
 <sub>swaybg = Wallpaper</sub><br/>
@@ -17,6 +17,7 @@
 <sub>ttf-hack-nerd = Font Used For Waybar</sub><br/>
 <sub>ttf-fira-code = Font Used For Kitty (Terminal)</sub><br/>
 <sub>noto-fonts-cjk = Font Support For Chinese, Japanese, Korean</sub><br/>
+<sub>noto-fonts-emoji</sub><br/>
 <sub>zip = Used to Zip & Unzip Files</sub><br/>
 <sub>pavucontrol = Output(Speakers) & Input(Microphone) Controls</sub><br/>
 </small>
