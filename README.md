@@ -6,7 +6,7 @@
 
 ### Resources
 
-    sudo pacman -S waybar swaybg gpu-screen-recorder wl-clipboard slurp grim ttf-fira-code ttf-fira-code noto-fonts-cjk zip unzip pavucontrol --noconfirm
+    sudo pacman -S waybar swaybg wf-recorder wl-clipboard slurp grim ttf-fira-code ttf-fira-code noto-fonts-cjk zip unzip pavucontrol --noconfirm
 
 ### Resource Guide
 <small>
