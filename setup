@@ -19,6 +19,8 @@ echo "installing kitty configurations..."
 cp -r kitty ~/.config
 echo "installing cursor configurations..."
 cp -r cursor/* ~/.local/share/icons
+echo "refreshing fonts"
+fc-cache -fv
 echo "installing wallpapers..."
 cp -r wallpaper /home/$USER/Pictures/
 echo "configuring the monitor..."
