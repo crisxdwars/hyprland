@@ -17,7 +17,7 @@
 <sub>ttf-hack-nerd = Font Used For Waybar</sub><br/>
 <sub>ttf-fira-code = Font Used For Kitty (Terminal)</sub><br/>
 <sub>noto-fonts-cjk = Font Support For Chinese, Japanese, Korean</sub><br/>
-<sub>noto-fonts-emoji</sub><br/>
+<sub>noto-fonts-emoji = Emoji Support</sub><br/>
 <sub>zip = Used to Zip & Unzip Files</sub><br/>
 <sub>pavucontrol = Output(Speakers) & Input(Microphone) Controls</sub><br/>
 </small>
