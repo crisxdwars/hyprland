@@ -2,7 +2,7 @@
 
 echo "Installing Dependencies..."
 
-sudo pacman -S waybar swaybg wf-recorder wl-clipboard slurp grim ttf-fira-code ttf-fira-code noto-fonts-cjk zip unzip pavucontrol ddcutil modprobe i2c-dev --noconfirm
+sudo pacman -S waybar swaybg wf-recorder wl-clipboard slurp grim ttf-fira-code ttf-fira-code noto-fonts-cjk noto-fonts-emoji zip unzip pavucontrol ddcutil modprobe i2c-dev --noconfirm
 
 echo "checking directories..."
 mkdir -p ~/.config
