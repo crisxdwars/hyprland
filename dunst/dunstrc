@@ -4,6 +4,7 @@ monitor = 0
 follow = keyboard
 origin = top-right
 scale = 0
+font = JetBrainsMono Nerd Font 11
 
 # Dimensions and spacing
 width = (300, 800)
@@ -13,13 +14,12 @@ padding = 12
 horizontal_padding = 12
 
 # Visual appearance
-corner_radius = 0
+corner_radius = 10
 frame_width = 0
 separator_height = 2
-transparency = 20
+transparency = 1
 
 # Typography
-font = Liga SFMono Nerd Font 11
 line_height = 0
 text_icon_padding = 8
 alignment = left
