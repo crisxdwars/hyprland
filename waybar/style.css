@@ -1,6 +1,6 @@
 /* General Waybar Styling */
 * {
-    font-family: "Hack Nerd Font", monospace; 
+    font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free";
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     font-size: 13px;
     font-weight: bold;
