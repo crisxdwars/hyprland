@@ -1,9 +1,6 @@
 #!/bin/env bash
-
 echo "Installing Dependencies..."
-
 sudo pacman -S waybar swaybg wf-recorder wl-clipboard slurp grim ttf-jetbrains-mono-nerd noto-fonts-cjk noto-fonts-emoji zip unzip pavucontrol ddcutil modprobe i2c-dev --noconfirm
-
 echo "checking directories..."
 mkdir -p ~/.config
 mkdir -p /home/$USER/Pictures
