@@ -28,5 +28,5 @@ sudo modprobe i2c-dev
 echo "i2c-dev" | sudo tee /etc/modules-load.d/i2c.conf
 sudo usermod -aG i2c $USER
 ddcutil setvcp 10 50
-echo "Setup Complete!"
+echo "Setup completed. Restart your hyprland (SUPER + M) to make changes of  wallpapers & fonts. "
 
