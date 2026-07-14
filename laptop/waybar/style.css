@@ -1,0 +1,151 @@
+/* General Waybar Styling */
+* {
+    font-family: "JetBrainsMono Nerd Font", "Font Awesome 6 Free";
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff; 
+}
+
+#waybar {
+    background: transparent;
+    transition: background-color 0.5s;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.modules-center {
+    border-bottom: 1px solid rgba(135, 135, 135, 0.137); /* A subtle color line at the bottom */
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 0 10px;
+}
+
+.modules-left, .modules-right {
+    border: none;
+    background: transparent;
+}
+
+/* -------------------- Modules Styling -------------------- */
+
+/* Tray Styling */
+#tray {
+    padding: 0 10px;
+    background-color: #000000;
+    color: black;
+    margin-left: 120px;
+}
+
+#tray .host {
+    padding: 0 5px;
+    background-color: #000000;
+}
+
+#tray menu {
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #ffffff;          
+    border: 1px solid #4c4c4c;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+/* Styles the individual menu items */
+#tray menu menuitem {
+    padding: 5px 10px;
+    color: #ffffff; 
+}
+
+/* Styles the menu item when the mouse hovers over it */
+#tray menu menuitem:hover {
+    background-color: #458588;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+/* Custom Clock Styling */
+#custom-clock {
+    margin-left: 5px;
+    background-color: transparent;
+    color: #ffffff;
+}
+
+/* New Volume Module Styling */
+#pulseaudio {
+    background-color: transparent;
+    padding: 0 10px;
+    color: #ffffff;
+}
+
+/* Style when volume is muted */
+#pulseaudio.muted {
+    color: #fb4934; /* The red you use for urgent workspaces */
+}
+
+/* Arch Icon */
+#custom-arch {
+    color: #ffffff;
+    padding: 0 15px 0 15px;
+    font-size: 15px;
+}
+
+/* Workspaces Styling */
+#workspaces {
+    padding: 0 5px;
+    margin-left: 10px;
+    background-color: transparent;
+    min-width: 150px;
+}
+
+/* Individual Workspace Button */
+#workspaces button {
+    padding: 0 5px;
+    background-color: transparent;
+    color: #bbbbbb;
+    border: none;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Active Workspace Button */
+#workspaces button.active {
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+/* Urgent Workspace Button */
+#workspaces button.urgent {
+    color: #fb4934; /* Red color for urgent workspace */
+}
+
+/* Focused Workspace on a different monitor (if you have multiple monitors) */
+#workspaces button.focused {
+    color: #fabd2f;
+}
+
+
+/* Tray Styling */
+#tray {
+    padding: 0 10px;
+    background-color: transparent;
+}
+
+#tray .host {
+    padding: 0 5px;
+}
+
+tooltip {
+    /* Example: Dark background for the tooltip */
+    background-color: rgba(0, 0, 0, 0.9);
+    border: 1px solid #ffffff;
+    padding: 10px;
+}
+
+/* Styling for the content inside the tooltip */
+tooltip label {
+    color: #ffffff;
+}
+
+/* If you want to target the clock's tooltip specifically: */
+#clock tooltip {
+    /* specific styles here */
+}

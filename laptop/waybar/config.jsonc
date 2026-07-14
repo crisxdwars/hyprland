@@ -1,0 +1,72 @@
+{
+    "position": "top",
+    "layer": "top", 
+    "margin-top": 0,
+    "margin-bottom": 0,
+
+   // "modules-left": [],
+    "modules-center": [
+        "custom/arch",
+        "hyprland/workspaces",
+        "tray", 
+        "battery",
+        "custom/clock",
+        "pulseaudio"
+    ],
+
+    // "modules-right": [],
+    "pulseaudio": {
+        "tooltip": false,
+        "format": "{volume}%",
+        "format-bluetooth": "{icon}  {volume}% ",
+        "format-muted": "{volume}%", 
+        "format-icons": {
+            "default": ["", "", ""]
+        },
+        "scroll-step": 5,
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "max-volume": 130 
+    },
+
+    "custom/arch": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "wofi", 
+        "on-click-middle": "#"
+    },
+    
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "sort-by-number": true,
+        "format-icons": {
+            "active": "●",
+            "default": "○",
+            "urgent": "!"
+        },
+        "on-click": "activate"
+    },
+
+    "tray": {
+        "spacing": 10
+    },
+
+    "custom/clock": {
+        "exec": "bash -c \"date '+%I:%M %p'\"",
+        "format": " {} ",
+        "interval": 1,
+        "tooltip": false
+    },
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": " {time}",
+        "format-icons": ["", "", "", "", ""],
+        "interval": 5
+    }
+}
