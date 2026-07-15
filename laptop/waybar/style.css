@@ -65,7 +65,6 @@
 
 /* Custom Clock Styling */
 #custom-clock {
-    margin-left: 5px;
     background-color: transparent;
     color: #ffffff;
 }
@@ -136,8 +135,8 @@
 tooltip {
     /* Example: Dark background for the tooltip */
     background-color: rgba(0, 0, 0, 0.9);
-    border: 1px solid #ffffff;
-    padding: 10px;
+    border: none;
+    padding: 5px;
 }
 
 /* Styling for the content inside the tooltip */

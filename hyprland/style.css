@@ -133,18 +133,14 @@
 }
 
 tooltip {
-    /* Example: Dark background for the tooltip */
     background-color: rgba(0, 0, 0, 0.9);
     border: none;
     padding: 5px;
 }
 
-/* Styling for the content inside the tooltip */
 tooltip label {
     color: #ffffff;
 }
 
-/* If you want to target the clock's tooltip specifically: */
 #clock tooltip {
-    /* specific styles here */
 }
