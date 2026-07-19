@@ -1,9 +1,10 @@
 #!/bin/env bash
 echo "Installing Dependencies..."
-sudo pacman -S waybar swaybg wf-recorder wl-clipboard slurp grim ttf-jetbrains-mono-nerd noto-fonts-cjk noto-fonts-emoji zip unzip pavucontrol ddcutil modprobe i2c-dev --noconfirm
+sudo pacman -S waybar swaybg wf-recorder wl-clipboard slurp grim ttf-jetbrains-mono-nerd noto-fonts-cjk noto-fonts-emoji zip unzip pavucontrol --noconfirm
 echo "checking directories..."
 mkdir -p ~/.config
-mkdir -p /home/$USER/Pictures
+mkdir -p /home/$USER/Pictures/Screenshots
+mkdir -p /home/$USER/Videos/records
 echo "copying wofi configurations..."
 cp -r wofi ~/.config
 echo "installing dunst configurations..."
@@ -15,15 +16,10 @@ cp -r waybar ~/.config
 echo "installing kitty configurations..."
 cp -r kitty ~/.config
 echo "installing cursor configurations..."
-cp -r cursor/* ~/.local/share/icons
+cp -r cursor ~/.local/share/icons
 echo "refreshing fonts"
 fc-cache -fv
 echo "installing wallpapers..."
 cp -r wallpaper /home/$USER/Pictures/
-echo "configuring the monitor..."
-sudo modprobe i2c-dev
-echo "i2c-dev" | sudo tee /etc/modules-load.d/i2c.conf
-sudo usermod -aG i2c $USER
-ddcutil setvcp 10 50
 echo "Setup completed. Restart your hyprland (SUPER + M) to make changes of  wallpapers & fonts. "
 
