@@ -23,8 +23,3 @@
 
 ###  Others:<br>
 	yay -S lens-shot --noconfirm
-
-### Preview
-
-![Preview](preview/simplepreview.mp4)
-
