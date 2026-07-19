@@ -22,3 +22,30 @@
 
 ###  Others:<br>
 	yay -S lens-shot --noconfirm
+
+## Shortcuts (Keybindings)
+
+The SUPER key is your Windows key.
+
+### Quick Launch & System
+* SUPER + Q: Open Terminal (kitty)
+* SUPER + R: Search & open apps (rofi)
+* SUPER + E: Open File Manager (ranger)
+* SUPER + C: Close the current window
+* SUPER + M: Log out of Hyprland
+
+### Managing Windows
+* SUPER + V: Make a window float (instead of tile)
+* SUPER + Left Click + Drag: Move floating windows
+* SUPER + Right Click + Drag: Resize windows
+
+### Workspaces & Magic Workspace
+* SUPER + 1 to 9: Switch to workspace 1-9
+* SUPER + SHIFT + 1 to 9: Move the focused application to a specific workspace (or use it to pull an app out of the magic workspace back to a normal workspace)
+* SUPER + Mouse Scroll: Scroll through your workspaces
+* SUPER + S: Open / close (toggle) the Magic Workspace (hidden scratchpad)
+* SUPER + SHIFT + S: Send the current window into the Magic Workspace
+
+### Misc
+* SUPER + ALT + R: Screen Record (Including the internal sounds only)
+* SUPER + PrintSC: Screenshot (Crop to Screenshot | Copy to Clipboard & Saves to Pictures/Screenshots/)
