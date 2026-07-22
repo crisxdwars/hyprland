@@ -4,35 +4,33 @@
     "margin-top": 0,
     "margin-bottom": 0,
 
-   // "modules-left": [],
     "modules-center": [
         "custom/arch",
         "hyprland/workspaces",
         "tray", 
-        "battery",
-        "custom/clock",
+        "clock",
         "pulseaudio"
     ],
 
-    // "modules-right": [],
     "pulseaudio": {
-        "tooltip": false,
+        "tooltip": true,
         "format": "{volume}%",
         "format-bluetooth": "{icon}  {volume}% ",
-        "format-muted": "{volume}%", 
+        "format-muted": "{volume}M", 
         "format-icons": {
             "default": ["", "", ""]
         },
         "scroll-step": 5,
         "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
-        "max-volume": 130 
+        "max-volume": 130,
+        "tooltip-format": "<b>Audio Output</b>\n<span color='#888888'>Device:</span> {desc}\n<span color='#888888'>Volume:</span> {volume}%"
     },
 
     "custom/arch": {
-        "format": "",
-        "tooltip": false,
-        "on-click": "wofi", 
-        "on-click-middle": "#"
+        "exec": "~/.config/waybar/scripts/arch_stats.sh",
+        "return-type": "json",
+        "interval": 1,
+        "format": "{}"
     },
     
     "hyprland/workspaces": {
@@ -49,14 +47,31 @@
     "tray": {
         "spacing": 10
     },
-
-    "custom/clock": {
-        "exec": "bash -c \"date '+%I:%M %p'\"",
-        "format": " {} ",
-        "interval": 1,
-        "tooltip": false
+    
+    "clock": {
+        "format": "{:%I:%M %p}",
+        "interval": 60,
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode": "month",
+            "mode-mon-col": 3,
+            "weeks-pos": "right",
+            "on-scroll": 1,
+            "format": {
+                "months": "<b>{}</b>",
+                "days": "<span color='#888888'>{}</span>",
+                "weeks": "<span color='#555555'>W{}</span>",
+                "weekdays": "<span color='#ffffff'><b>{}</b></span>",
+                "today": "<span color='#ffffff'><b><u>{}</u></b></span>"
+            }
+        },
+        "actions": {
+            "on-click-right": "mode",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
     },
-
+    
     "battery": {
         "states": {
             "warning": 30,
@@ -65,8 +80,13 @@
         "format": "{icon} {capacity}%",
         "format-charging": " {capacity}%",
         "format-plugged": " {capacity}%",
-        "format-alt": " {time}",
+        "format-full": "󰁹 {capacity}%",
+        "format-discharging": "{icon} {capacity}%",
         "format-icons": ["", "", "", "", ""],
-        "interval": 5
+        "interval": 10,
+        "tooltip-format": "<b>Discharging</b>\n<span color='#888888'>Capacity:</span> {capacity}%\n<span color='#888888'>Remaining:</span> {time}\n<span color='#888888'>Power Draw:</span> {power}W",
+        "tooltip-format-charging": "<b>Charging</b>\n<span color='#888888'>Capacity:</span> {capacity}%\n<span color='#888888'>Time to full:</span> {time}\n<span color='#888888'>Power Draw:</span> {power}W",
+        "tooltip-format-plugged": "<b>Fully Charged</b>\n<span color='#888888'>Capacity:</span> {capacity}%"
     }
 }
+    

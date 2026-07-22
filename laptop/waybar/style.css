@@ -81,6 +81,20 @@
     color: #fb4934; /* The red you use for urgent workspaces */
 }
 
+/* Pulseaudio Tooltip Box */
+#pulseaudio tooltip {
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    padding: 8px 12px;
+}
+
+#pulseaudio tooltip label {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 12px;
+    color: #ffffff;
+}
+
 /* Arch Icon */
 #custom-arch {
     color: #ffffff;
@@ -144,7 +158,21 @@ tooltip label {
     color: #ffffff;
 }
 
-/* If you want to target the clock's tooltip specifically: */
+/* Calendar Tooltip Box (Black Background, White Text) */
 #clock tooltip {
-    /* specific styles here */
+    background-color: #000000;
+    border: 1px solid #ffffff;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+/* Monospace alignment & text color */
+#clock tooltip label {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+#battery {
+    padding-right: 10px;
 }
