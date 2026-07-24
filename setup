@@ -14,7 +14,7 @@ cp -r waybar ~/.config
 cp -r kitty ~/.config
 cp -r lf ~/.config
 echo "Installing cursor"
-cp -r cursor ~/.local/share/icons
+cp -r cursor/* ~/.local/share/icons
 echo "Refreshing fonts"
 fc-cache -fv
 echo "Installing wallpapers..."
