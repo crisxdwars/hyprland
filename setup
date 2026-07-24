@@ -1,25 +1,22 @@
 #!/bin/env bash
-echo "Installing Dependencies..."
+echo "Installing dependencies..."
 sudo pacman -S waybar swaybg wf-recorder wl-clipboard slurp grim ttf-jetbrains-mono-nerd noto-fonts-cjk noto-fonts-emoji zip unzip pavucontrol --noconfirm
-echo "checking directories..."
+echo "Checking directories..."
 mkdir -p ~/.config
 mkdir -p /home/$USER/Pictures/Screenshots
 mkdir -p /home/$USER/Videos/records
-echo "copying wofi configurations..."
+echo "Configuring..."
+cp -r fastfetch ~/.config
 cp -r wofi ~/.config
-echo "installing dunst configurations..."
 cp -r dunst ~/.config
-echo "installing hyprland configurations..."
 cp -r hypr ~/.config
-echo "installing waybar configurations..."
 cp -r waybar ~/.config
-echo "installing kitty configurations..."
 cp -r kitty ~/.config
-echo "installing cursor configurations..."
+echo "Installing cursor"
 cp -r cursor ~/.local/share/icons
-echo "refreshing fonts"
+echo "Refreshing fonts"
 fc-cache -fv
-echo "installing wallpapers..."
+echo "Installing wallpapers..."
 cp -r wallpaper /home/$USER/Pictures/
 echo "Setup completed. Restart your hyprland (SUPER + M) to make changes of  wallpapers & fonts. "
 
