@@ -31,22 +31,20 @@
 
 #tray {
     padding: 0 10px;
-    background-color: #000000;
     color: black;
     margin-left: 120px;
+    margin-right: 10px;
 }
 
 #tray .host {
     padding: 0 5px;
-    background-color: #000000;
 }
 
 #tray menu {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0,0,0, 0.9);
     color: #ffffff;          
-    border: 1px solid #4c4c4c;
-    border-radius: 6px;
-    padding: 5px;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 #tray menu menuitem {
@@ -55,13 +53,7 @@
 }
 
 #tray menu menuitem:hover {
-    background-color: #458588;
-    color: #ffffff;
-    border-radius: 4px;
-}
-
-#custom-clock {
-    background-color: transparent;
+    background-color: #0074ef;
     color: #ffffff;
 }
 
