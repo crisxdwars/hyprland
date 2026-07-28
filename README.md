@@ -22,7 +22,7 @@
 ###  Others:<br>
 	yay -S lens-shot --noconfirm
 
-## Shortcuts (Keybindings)
+### Shortcuts (Keybindings)
 
 The SUPER key is your Windows key.
 
