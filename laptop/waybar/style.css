@@ -16,16 +16,20 @@
 
 .modules-left {
     border-bottom-right-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0 10px;
 }
 
 .modules-right {
     border-bottom-left-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 0 10px;
 }
 
 .modules-center {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.1);
     padding: 0 10px;
 }
 
@@ -100,7 +104,7 @@
 }
 
 #tray menu {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
     color: #ffffff;          
     border-radius: 10px;
     padding: 10px;
@@ -118,7 +122,7 @@
 
 /* Tooltips */
 tooltip {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0,0,0, 0.8);
     border: none;
     padding: 5px;
 }
@@ -128,7 +132,7 @@ tooltip label {
 }
 
 #clock tooltip, #pulseaudio tooltip {
-    background-color: #000000;
+    background-color: rgba(0,0,0, 0.8);
     border: 1px solid #ffffff;
     border-radius: 6px;
     padding: 8px;
