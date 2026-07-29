@@ -40,11 +40,28 @@
 
     "mpris": {
             "format": "󰐊  {artist} - {title}",
-            "format-paused": "󰏤  <i>{artist} - {title}</i>",
-            "format-stopped": "󰓛",
+            "format-paused": "󰓛  <i>{artist} - {title}</i>",
+            "format-stopped": "󰏤",
             "max-length": 40,
             "tooltip": false,
         },
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-full": "󰁹 {capacity}%",
+        "format-discharging": "{icon} {capacity}%",
+        "format-icons": ["", "", "", "", ""],
+        "interval": 10,
+        "tooltip-format": "<b>Discharging</b>\n<span color='#888888'>Capacity:</span> {capacity}%\n<span color='#888888'>Remaining:</span> {time}\n<span color='#888888'>Power Draw:</span> {power}W",
+        "tooltip-format-charging": "<b>Charging</b>\n<span color='#888888'>Capacity:</span> {capacity}%\n<span color='#888888'>Time to full:</span> {time}\n<span color='#888888'>Power Draw:</span> {power}W",
+        "tooltip-format-plugged": "<b>Fully Charged</b>\n<span color='#888888'>Capacity:</span> {capacity}%"
+    },
 
     "clock": {
         "format": "{:%I:%M %p}",
