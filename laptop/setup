@@ -1,6 +1,6 @@
 #!/bin/env bash
 echo "Installing dependencies..."
-sudo pacman -S waybar swaybg wf-recorder wl-clipboard slurp grim ttf-jetbrains-mono-nerd noto-fonts-cjk noto-fonts-emoji zip lf unzip pavucontrol --noconfirm
+sudo pacman -S waybar swaybg wf-recorder wl-clipboard slurp grim ttf-jetbrains-mono-nerd noto-fonts-cjk noto-fonts-emoji zip lf unzip pavucontrol playerctl --noconfirm
 echo "Checking directories..."
 mkdir -p ~/.config
 mkdir -p /home/$USER/Pictures/Screenshots
@@ -19,5 +19,12 @@ echo "Refreshing fonts"
 fc-cache -fv
 echo "Installing wallpapers..."
 cp -r wallpaper /home/$USER/Pictures/
+echo "Installing Yay aur"
+sudo pacman -S --needed git base-devel
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+cd
+rm -rf yay
 echo "Setup completed. Restart your hyprland (SUPER + M) to make changes of  wallpapers & fonts. "
 

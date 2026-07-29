@@ -5,7 +5,7 @@
 
 ### Dependencies & Resources
 
-    sudo pacman -S waybar swaybg wf-recorder wl-clipboard slurp grim ttf-jetbrains-mono-nerd noto-fonts-cjk noto-fonts-emoji zip lf unzip pavucontrol --noconfirm
+    sudo pacman -S waybar swaybg wf-recorder wl-clipboard slurp grim ttf-jetbrains-mono-nerd noto-fonts-cjk noto-fonts-emoji zip lf unzip pavucontrol playerctl --noconfirm
 
 ### Resource Information
 * waybar: Top Bar
