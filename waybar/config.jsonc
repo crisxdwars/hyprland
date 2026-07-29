@@ -39,11 +39,11 @@
     },
 
     "mpris": {
-            "format": "󰐊  {artist} - {title}",
-            "format-paused": "󰓛  <i>{artist} - {title}</i>",
-            "format-stopped": "󰏤",
+            "format": "󰏤  {artist} - {title}",
+            "format-paused": "󰐊  <i>{artist} - {title}</i>",
+            "format-stopped": "󰓛",
             "max-length": 40,
-            "tooltip": false,
+            "tooltip": false
         },
 
     "battery": {
