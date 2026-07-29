@@ -14,8 +14,15 @@
     padding-right: 10px;
 }
 
-.modules-left, .modules-center, .modules-right {
-    border-bottom: 1px solid rgba(135, 135, 135, 0.137);
+.modules-left {
+    border-bottom-right-radius: 15px;
+}
+
+.modules-right {
+    border-bottom-left-radius: 15px;
+}
+
+.modules-center {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     background-color: rgba(0, 0, 0, 0.7);
