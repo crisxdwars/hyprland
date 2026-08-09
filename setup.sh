@@ -19,12 +19,6 @@ echo "Refreshing fonts"
 fc-cache -fv
 echo "Installing wallpapers..."
 cp -r wallpaper /home/$USER/Pictures/
-echo "Installing Yay aur"
-sudo pacman -S --needed git base-devel
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-cd ..
-rm -rf yay
-echo "Setup completed. Restart your hyprland (SUPER + M) to make changes of  wallpapers & fonts. "
+echo "Setup completed." 
+echo "Restart your hyprland (SUPER + M) to make changes of  wallpapers & fonts. "
 
