@@ -19,6 +19,7 @@ echo "Refreshing fonts"
 fc-cache -fv
 echo "Installing wallpapers..."
 cp -r wallpaper /home/$USER/Pictures/
+hyprctl reload
 echo "Setup completed." 
-echo "Restart your hyprland (SUPER + M) to make changes of  wallpapers & fonts. "
+echo "Restart your hyprland (SUPER + M) for a Better Experience."
 
