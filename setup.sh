@@ -5,6 +5,7 @@ echo "Checking directories..."
 mkdir -p ~/.config
 mkdir -p /home/$USER/Pictures/Screenshots
 mkdir -p /home/$USER/Videos/records
+mkdir -p ~/.local/share/icons
 echo "Configuring..."
 cp -r fastfetch ~/.config
 cp -r wofi ~/.config
