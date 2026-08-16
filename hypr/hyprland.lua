@@ -208,6 +208,12 @@ hl.config({
             passes = 1,
             vibrancy = 0.1696,
         },
+
+        motion_blur = {
+            enabled = true,
+            samples = 3    -- Default value is (7) It may take performance.
+        },
+
         dim_special = 0,
     },
     animations = {
