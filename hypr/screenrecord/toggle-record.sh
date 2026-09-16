@@ -3,7 +3,6 @@
 # --- Configuration ---
 RECORD_DIR="/home/$USER/Videos/records"
 LOCK_FILE="/tmp/gpu_recorder.lock"
-NOTIFICATION_TAG="gpurec-toggle"
 TIMESTAMP=$(date +%Y-%m-%d_%H-%M-%S)
 OUTPUT_FILE="$RECORD_DIR/$TIMESTAMP.mp4"
 LOG_FILE="/tmp/gpu_recorder.log"
@@ -14,8 +13,8 @@ if [ -f "$LOCK_FILE" ]; then
     pkill -SIGINT -x wf-recorder
     rm "$LOCK_FILE"
     sync
-    notify-send -a "Recorder" -t 2000 -h "string:x-dunst-stack-tag:$NOTIFICATION_TAG" \
-        "Recording Stopped" "Video saved to $RECORD_DIR"
+    
+    hyprctl notify 5 3000 "rgb(40a02b)" "Recording Stopped: Video saved!"
     exit 0
 fi
 
@@ -32,19 +31,18 @@ if [ -z "$AUDIO_SOURCE" ] || [ "$AUDIO_SOURCE" = ".monitor" ]; then
 fi
 
 if lspci | grep -i nvidia >/dev/null && nvidia-smi &>/dev/null; then
-    GPU_TYPE="Nvidia Hardware (NVENC)"
+    GPU_TYPE="Nvidia (NVENC)"
     REC_CMD="wf-recorder $AUDIO_FLAG -c h264_nvenc -f $OUTPUT_FILE"
 
 elif [ -e /dev/dri/renderD128 ]; then
-    GPU_TYPE="AMD/Intel Hardware (VAAPI)"
+    GPU_TYPE="AMD/Intel (VAAPI)"
     REC_CMD="wf-recorder $AUDIO_FLAG -c h264_vaapi -d /dev/dri/renderD128 -t -f $OUTPUT_FILE"
 
 else
-    GPU_TYPE="Universal CPU (Software)"
+    GPU_TYPE="CPU (Software)"
     REC_CMD="wf-recorder $AUDIO_FLAG -c libx264 -p preset=ultrafast -f $OUTPUT_FILE"
 fi
 
 $REC_CMD > "$LOG_FILE" 2>&1 &
 
-notify-send -a "Recorder" -t 3000 -h "string:x-dunst-stack-tag:$NOTIFICATION_TAG" \
-    "Recording Started" "Profile: $GPU_TYPE"
+hyprctl notify 1 3000 "rgb(1e66f5)" "Recording Started [$GPU_TYPE]"
